@@ -3,4 +3,5 @@ html {
 }
 *, ::before, ::after {
     box-sizing: inherit;
+    background-image: url("..image/background.jpg");
 }
