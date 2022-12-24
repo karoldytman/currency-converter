@@ -1,11 +1,4 @@
-.div {
-    max-width: 1000px;
-    padding: 160px;
-    border: 2px;
-    margin: 30px auto;
-    background-image: url("../image/money1.jpg");
 
-}
 
 .div__header {
     color: rgb(3, 174, 117);
@@ -35,6 +28,7 @@
     padding: 20px;
     margin: 20px;
     width: 600px;
+    background-color: rgb(197, 197, 252);
 }
 
 .form__legend {
