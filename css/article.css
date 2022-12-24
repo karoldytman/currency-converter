@@ -4,7 +4,7 @@
     border: 2px;
     margin: 30px auto;
     background-image: url("../image/money1.jpg");
-    
+    text-align: center;
 
 }
 
@@ -15,7 +15,7 @@
     background-color: white;
     padding: 15px;
     max-width: max-content;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 50px;
 }
 
 .div__header--width {
