@@ -1,5 +1,5 @@
 .div {
-    max-width: 600px;
+    max-width: 1000px;
     padding: 15px;
     border: 2px;
     margin: 30px auto;
@@ -19,7 +19,7 @@
 }
 
 .div__header--width {
-    max-width: 100%;
+    max-width: 600px;
     margin-top: 6%;
     font-size: 22px;
 }
@@ -35,6 +35,7 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
+    width: 600px;
 }
 
 .form__legend {
