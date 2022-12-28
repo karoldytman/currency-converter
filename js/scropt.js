@@ -1,31 +1,47 @@
+{
+    const currrency = (exchangeElement) => {
+        const EURElement = document.querySelector(".js-EUR")
+        const GBPElement = document.querySelector(".js-GBP")
+        const USDElement = document.querySelector(".js-USD")
+        const carrencyElement = document.querySelector(".js-carrency")
 
-let formElement = document.querySelector(".js-form")
-let amountElement = document.querySelector(".js-amount")
-let exchangeElement = document.querySelector(".js-exchange")
-let EURElement = document.querySelector(".js-EUR")
-let GBPElement = document.querySelector(".js-GBP")
-let USDElement = document.querySelector(".js-USD")
-let resultElement = document.querySelector(".js-result")
-let carrencyElement = document.querySelector(".js-carrency")
+        if (exchangeElement.value === EURElement.value) {
+            carrencyElement.innerText = " EUR";
+        } if (exchangeElement.value === GBPElement.value) {
+            carrencyElement.innerText = " GBP";
+        } if (exchangeElement.value === USDElement.value) {
+            carrencyElement.innerText = " USD";
+        }
+    };
 
+    const updateResult = (result) => {
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
-    let amount = amountElement.value;
-    let exchange = exchangeElement.value;
+        const resultElement = document.querySelector(".js-result")
+        resultElement.innerText = result.toFixed(2);
 
-    let result = amount / exchange;
-    resultElement.innerText = result.toFixed(2);
+    };
 
-    if (exchangeElement.value === EURElement.value) {
-        carrencyElement.innerText = "EUR";
-    } if (exchangeElement.value === GBPElement.value) {
-        carrencyElement.innerText = "GBP";
-    } if (exchangeElement.value === USDElement.value) {
-        carrencyElement.innerText = "USD";
-    }
+    const onFormSubmit = (event) => {
+        event.preventDefault();
 
-});
+        const amountElement = document.querySelector(".js-amount")
+        const exchangeElement = document.querySelector(".js-exchange")
 
+        const amount = amountElement.value;
+        const exchange = exchangeElement.value;
 
+        const result = amount / exchange;
 
+        
+        updateResult(result);
+        currrency(exchangeElement);
+
+    };
+
+    const init = () => {
+        const formElement = document.querySelector(".js-form")
+        formElement.addEventListener("submit", onFormSubmit)
+    };
+
+    init();
+}
