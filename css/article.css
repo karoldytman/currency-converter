@@ -19,6 +19,7 @@
 .div__paragraph {
     margin: -6% 0% 2% 60%;
     font-style: italic;
+    font-weight: bold;
 }
 
 .form__fieldset {
@@ -83,4 +84,5 @@
 .form__paragraph {
     margin-left: 63%;
     font-style: italic;
+    font-weight: bold;
 }
