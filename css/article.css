@@ -1,6 +1,6 @@
 
 
-.div__header {
+.container__header {
     color: rgb(3, 174, 117);
     margin: 20px 2px 40px;
     border: 2px solid rgb(3, 174, 117);
@@ -10,14 +10,14 @@
     border-radius: 50px;
 }
 
-.div__header--width {
+.container__header--width {
     max-width: 600px;
     margin-top: 6%;
     font-size: 22px;
 }
 
-.div__paragraph {
-    margin: -6% 0% 2% 60%;
+.container__paragraph {
+    margin: 1% 0% 12% 70%;
     font-style: italic;
     font-weight: bold;
 }
@@ -28,7 +28,6 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
-    width: 600px;
     background-color: rgb(241, 249, 255);
 }
 
@@ -82,7 +81,7 @@
 }
 
 .form__paragraph {
-    margin-left: 63%;
+    margin-left: 72%;
     font-style: italic;
     font-weight: bold;
 }

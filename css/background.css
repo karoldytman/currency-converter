@@ -1,7 +1,7 @@
-.div {
+.container {
     max-width: 1000px;
     max-height: 800px;
-    padding: 160px;
+    padding: 20px;
     border: 2px;
     margin: 30px auto;
     background-image: url("../image/money1.jpg");
