@@ -22,3 +22,9 @@ Page gives you the ability to convert money from PLN into following currencies
 - GBP - 4.4236 PLN
 - USD - 4.4589 PLN
 
+## Tools used in the project
+- HTML
+- CSS
+- JavaScript
+- BEM
+- ES6
